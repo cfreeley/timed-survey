@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"></link>
+    </head>
+    <body>
+        <script id="survey" type="text/x-handlebars-template">
+            <div class="container">
+                <div class="page-header">
+                  <h1>Laboratory in Cognition <small>Experiment</small></h1>
+                </div>
+                <div class="jumbotron" style="">
+                    <h3>Question {{number}}</h3>
+                    <p>
+                        {{{question}}}
+                    </p>
+                    <div>
+                        <input type="text" id="answer"> {{unit}}    
+                    </div>
+                    <br>
+                    <button id="nextButton" class="btn btn-success" onclick="next()">Submit</button>
+                </div>
+            </div>
+        </script>
+        <script id="finish" type="text/x-handlebars-template">
+            <div class="container">
+                <div class="page-header">
+                  <h1>Laboratory in Cognition <small>Experiment</small></h1>
+                </div>
+                <div class="container" style="">
+                    <h3>Thank you for participating!</h3>
+                </div>
+            </div>
+        </script>
+        <div id="target"></div>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/handlebars/handlebars.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+
+</html>

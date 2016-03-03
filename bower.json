@@ -1,0 +1,19 @@
+{
+  "name": "survey",
+  "version": "0.0.0",
+  "authors": [
+    "cfreeley <freeley.c@husky.neu.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "handlebars": "~4.0.5"
+  }
+}
